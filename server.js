@@ -1,8 +1,12 @@
 const express = require('express')
 const fs = require('fs')
-const { send } = require('process')
-const { stringify } = require('querystring')
+const cors = require('cors')
+
 const app = express()
+
+app.options('*', cors()) // include before other routes 
+app.use(cors())
+
 const port = 4000
 
 app.get('/api/members', (req, res) => {
@@ -21,7 +25,7 @@ app.get('/api/members', (req, res) => {
     res.json(members)
 })
 
-app.get('/api/members/:id', (req,res) => {
+app.get('/api/member/:id', (req,res) => {
     let rawdata = fs.readFileSync('members.json');
     let members = JSON.parse(rawdata);
     let singleMember = members.find(members => JSON.stringify(members.id) === req.params.id)
