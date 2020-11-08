@@ -36,14 +36,6 @@ class Item extends Component {
     }
 }
 
-// var setMargin = {
-//     padding: "0px 200px 20px 200px"
-// };
-
-// var setDistanceBetweenItems = {
-//     marginBottom: "5px"
-// };
-
 Item.propTypes = {
     fetchData: PropTypes.func.isRequired,
     items: PropTypes.array.isRequired,

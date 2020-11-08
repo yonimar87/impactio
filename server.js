@@ -4,7 +4,7 @@ const cors = require('cors')
 
 const app = express()
 
-app.options('*', cors()) // include before other routes 
+app.options('*', cors())
 app.use(cors())
 
 const port = 4000

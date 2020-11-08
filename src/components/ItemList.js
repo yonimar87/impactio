@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { ListGroup, ListGroupItem } from 'react-bootstrap';
 import { itemsFetchData } from '../actions/items';
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class ItemList extends Component {
     componentDidMount() {

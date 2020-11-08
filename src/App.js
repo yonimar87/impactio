@@ -1,7 +1,7 @@
 import './App.css';
 import MemberNavbar from './Shared/Navbar'
 
-import { BrowserRouter as Router, Route, Switch, Link, useParams } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Provider } from 'react-redux';
 
 import configureStore from './store/configureStore';
