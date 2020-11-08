@@ -6,7 +6,7 @@ function MemberNavbar() {
         <div className="container">
           <Navbar id="Navbar" variant="primary">
             <Nav className="mr-auto">
-                <Nav.Link href="/">Members</Nav.Link>
+                <Nav.Link href="/members">Members</Nav.Link>
             </Nav>
           </Navbar>
         </div>

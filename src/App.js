@@ -22,7 +22,7 @@ function App() {
         <Route exact path="/members" component={ItemList} />
         <Route exact path="/member/:id" component={Item} />
       </div>
-      </Provider>,
+      </Provider>
     </Router>
 
   );

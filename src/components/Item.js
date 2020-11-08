@@ -21,16 +21,16 @@ class Item extends Component {
         return (
             // <div style={setMargin}>
             <div>
-                    {JSON.stringify(this.props.match.params.id)}
-                    <div key={this.props.items.id}>
-                        {/* <ListGroup style={setDistanceBetweenItems}> */}
-                            <ListGroup>
-                                <ListGroupItem href={this.props.items.firstName} header={this.props.items.firstName}>
-                                    {this.props.items.firstName} {this.props.items.lastName} |
-                                    <span className="pull-xs-right"> Date Joined: {this.props.items.dateJoined}</span>
-                                </ListGroupItem>
-                            </ListGroup>
-                    </div>
+                {JSON.stringify(this.props.match.params.id)}
+                <div key={this.props.items.id}>
+                    {/* <ListGroup style={setDistanceBetweenItems}> */}
+                        <ListGroup>
+                            <ListGroupItem href={this.props.items.firstName} header={this.props.items.firstName}>
+                                {this.props.items.firstName} {this.props.items.lastName} |
+                                <span> Date Joined: {this.props.items.dateJoined}</span>
+                            </ListGroupItem>
+                        </ListGroup>
+                </div>
             </div>
         );
     }

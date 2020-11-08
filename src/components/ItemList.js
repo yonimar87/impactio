@@ -24,14 +24,13 @@ class ItemList extends Component {
             <div style={setMargin}>
                 {this.props.items.map((item) => (
                     <div key={item.id}>
-                            <ListGroup style={setDistanceBetweenItems}>
-                                <ListGroupItem href={item.firstName} header={item.firstName}>
-                                    {item.firstName} {item.lastName} |
-                                        <Link to={"/member/" + item.id}>{item.id}</Link>
-                                    <span className="pull-xs-right"> Date Joined: {item.dateJoined}</span>
-                                </ListGroupItem>
-                            </ListGroup>
-                        
+                        <ListGroup style={setDistanceBetweenItems}>
+                            <ListGroupItem href={item.firstName} header={item.firstName}>
+                                {item.firstName} {item.lastName} |
+                                    <Link to={"/member/" + item.id}>{item.id}</Link>
+                                <span> Date Joined: {item.dateJoined}</span>
+                            </ListGroupItem>
+                        </ListGroup> 
                     </div>
                 ))}
             </div>
