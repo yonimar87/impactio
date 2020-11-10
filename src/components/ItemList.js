@@ -21,10 +21,10 @@ class ItemList extends Component {
         }
         console.log('step 3: initial rendering')
         return (
-            <div style={setMargin}>
+            <div>
                 {this.props.items.map((item) => (
                     <div key={item.id}>
-                        <ListGroup style={setDistanceBetweenItems}>
+                        <ListGroup>
                             <ListGroupItem href={item.firstName} header={item.firstName}>
                                 {item.firstName} {item.lastName} |
                                     <Link to={"/member/" + item.id}>{item.id}</Link>
@@ -38,13 +38,6 @@ class ItemList extends Component {
     }
 }
 
-var setMargin = {
-    padding: "0px 200px 20px 200px"
-};
-
-var setDistanceBetweenItems = {
-    marginBottom: "5px"
-};
 
 ItemList.propTypes = {
     fetchData: PropTypes.func.isRequired,
